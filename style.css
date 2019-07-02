@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.mc{
+    margin: 0 auto;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.highlihter{
+    background-color: dimgrey;
+    text-decoration: line-through;
+}
+
+.list-group-item{
+    cursor: pointer;
+    width: 100%;
+}
+
+span{
+    word-break: break-all;
+    margin-right: 10px;
+}
