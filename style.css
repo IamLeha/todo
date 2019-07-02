@@ -1,31 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.mc{
+.mc {
     margin: 0 auto;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
-.show{
+.show {
     display: block !important;
 }
 
-.highlihter{
+.highlihter {
     background-color: dimgrey;
     text-decoration: line-through;
 }
 
-.list-group-item{
+.list-group-item {
     cursor: pointer;
     width: 100%;
 }
 
-span{
+span {
     word-break: break-all;
     margin-right: 10px;
 }
+

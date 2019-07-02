@@ -96,13 +96,19 @@ btnCont.addEventListener('click', (e) => {
     let listArray = Array.from(List);
 
     if(rem.classList.contains('btn-danger')){
+        /*for(let i=0; i < listArray.length; i++){
+            if(listArray[i].classList.contains("highlihter")){
+                listArray[i].classList.remove("highlihter");
+                listArray[i].remove();
+            }
+        }*/
 
-    for(let i=0; i < listArray.length; i++){
-        if(listArray[i].classList.contains("highlihter")){
-            listArray[i].classList.remove("highlihter");
-            listArray[i].remove();
-        }
-    }
+        listArray.forEach((elem, index) => {
+            if(elem.classList.contains('highlihter')){
+                elem.classList.remove('highlihter');
+                elem.remove();
+            }
+        });
     }
 
     if(rem.classList.contains('btn-primary')){
@@ -111,17 +117,17 @@ btnCont.addEventListener('click', (e) => {
     
 
     if(rem.classList.contains('btn-info')){
-        for(let i=0; i < listArray.length; i++){
-            if(listArray[i].classList.contains("list-group-item")){
-                listArray[i].remove();
+        listArray.forEach((elem, index) => {
+            if(elem.classList.contains("list-group-item")){
+                elem.classList.add('hide');
             }
-        }
+        });
     }
 
-    if(rem.classList.contains('success')){
-        for(let i=0; i< listArray.length; i++){
-            if(listArray.classList.contains('hide')){
-                listArray.classList.remove('hide');
+    if(rem.classList.contains('btn-success')){
+       for(let i=0; i< listArray.length; i++){
+            if(listArray[i].classList.contains('hide')){
+                listArray[i].classList.remove('hide');
             }
         }
     }
